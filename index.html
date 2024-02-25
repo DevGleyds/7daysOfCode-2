@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversa com o Prompt</title>
+</head>
+
+
+<body>
+  <Script>
+    let name = prompt("Qual é o seu nome?");
+    let age = prompt("Quantos anos você tem?");
+    let language = prompt("Qual linguagem de programação você está aprendendo?");
+
+    alert("Olá " + name + " você tem " + age + " anos e já está aprendendo " + language + "!");
+
+    let feedback = prompt("Você gosta de estudar " + language + "?" + "   Digite 1 para SIM e 2 para NÃO");
+
+    function likeStudy() {
+      alert("Muito bom! Continue estudando e você terá sucesso e um futuro brilhante. 😀🎉")
+    }
+    function notLikeStudy() {
+      alert("Aahh que pena... já tentou procurar outras linguagens? 😉 ")
+    }
+
+    if (feedback == 1) {
+      likeStudy();
+    } else if (feedback == 2) {
+      notLikeStudy();
+    }
+  </Script>
+</body>
+
+</html>
